@@ -1,59 +1,69 @@
-# Sistema de Mensajes Motivacionales por Edad
+Age-Based Motivational Message System
 
-Un programa simple en JavaScript que muestra mensajes personalizados según la edad del usuario, con validación de entrada y mensajes motivacionales.
+A simple JavaScript program that displays personalized messages based on the user's age, with input validation and motivational messages.
+Key Features
 
-## Características principales
+    Interactive interface using prompt() and alert()
 
-- Interfaz interactiva con `prompt()` y `alert()`
-- Nombre de usuario opcional (valor por defecto: "Amigo")
-- Validación estricta de edad (solo números enteros positivos 1-120)
-- Mensajes motivacionales personalizados:
-  - Para menores de 18 años
-  - Para mayores o iguales a 18 años
--  Mensajes de error claros para entradas inválidas
+    Optional username (default value: "Friend")
 
-## Cómo usar
+    Strict age validation (only positive integers 1-120)
 
-1. **Ejecución en navegador:**
-   - Copia el código JavaScript
-   - Abre la consola del navegador (F12)
-   - Pega el código y presiona Enter
+    Personalized motivational messages:
 
-2. **Ejecución con HTML:**
-   ```html
-   <!DOCTYPE html>
-   <html>
-   <head>
-       <title>Sistema de Mensajes por Edad</title>
-   </head>
-   <body>
-       <script src="mensajes-edad.js"></script>
-   </body>
-   </html>
+        For users under 18 years
 
-3. **Ejemplos:**
-A. Entrada:
-  Nombre: (vacío)
-  Edad: 16
+        For users 18 years or older
 
-Salida:
-  ¡Hola! 
-  Con tus 16 años tienes todo un futuro por delante. 
-  ¡Sigue aprendiendo y creciendo! 
-  Cada línea de código que escribes te acerca a tus sueños.
+    Clear error messages for invalid inputs
 
-B. Entrada:
-  Nombre: María
-  Edad: 25
+How to Use
 
-Salida:
-  ¡Hola María! 
-  Con tus 25 años tienes una gran experiencia de vida. 
-  El mundo de la programación está lleno de oportunidades para ti. 
-  ¡Sigue adelante y alcanza tus metas!
+    Browser Execution:
 
-C. Entrada:
-  Edad: "dieciséis"
+        Copy the JavaScript code
 
-Salida:
-  Por favor ingresa solo números enteros positivos. Ejemplo: 16  
+        Open browser console (F12)
+
+        Paste the code and press Enter
+
+    HTML Execution:
+    html
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Age-Based Message System</title>
+    </head>
+    <body>
+        <script src="age-messages.js"></script>
+    </body>
+    </html>
+
+    Examples:
+
+A. Input:
+Name: (empty)
+Age: 16
+
+Output:
+Hello!
+At 16 years old, you have a whole future ahead of you.
+Keep learning and growing!
+Every line of code you write brings you closer to your dreams.
+
+B. Input:
+Name: Maria
+Age: 25
+
+Output:
+Hello Maria!
+At 25 years old, you have great life experience.
+The world of programming is full of opportunities for you.
+Keep moving forward and reach your goals!
+
+C. Input:
+Age: "sixteen"
+
+Output:
+Please enter only positive whole numbers. Example: 16
