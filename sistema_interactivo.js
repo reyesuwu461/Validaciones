@@ -1,33 +1,33 @@
 /**
- * Programa que muestra mensajes motivacionales según la edad
- * - Nombre opcional (acepta cualquier entrada)
- * - Valida que la edad sea número entero positivo (1-120)
- * - Mensajes personalizados para menores y mayores de edad
+ * Program that shows motivational messages based on age
+ * - Optional name (accepts any input)
+ * - Validates that age is a positive integer (1-120)
+ * - Custom messages for minors and adults
  */
 
-// Obtener datos del usuario
-const nombreUsuario = prompt("¿Cómo te llamas? (opcional)");
-const edadIngresada = prompt("Por favor, ingresa tu edad:");
+// Get user data
+const userName = prompt("What's your name? (optional)");
+const enteredAge = prompt("Please enter your age:");
 
-// Validar la edad
-if (!/^\d+$/.test(edadIngresada)) {
-    alert("Por favor ingresa solo números enteros positivos.");
+// Validate age
+if (!/^\d+$/.test(enteredAge)) {
+    alert("Please enter only positive whole numbers.");
 } else {
-    const edad = parseInt(edadIngresada);
+    const age = parseInt(enteredAge);
     
-    if (edad < 1 || edad > 120) {
-        alert("La edad debe ser entre 1 y 120 años");
-    } else if (edad < 18) {
-        // Mensaje motivacional para menores de edad
-        alert(`¡Hola${nombreUsuario}! 
-        Con tus ${edad} años tienes todo un futuro por delante. 
-        ¡Sigue aprendiendo y creciendo! 
-        Cada línea de código que escribes te acerca a tus sueños.`);
+    if (age < 1 || age > 120) {
+        alert("Age must be between 1 and 120 years");
+    } else if (age < 18) {
+        // Motivational message for minors
+        alert(`Hello${userName}! 
+        At ${age} years old, you have a whole future ahead of you. 
+        Keep learning and growing! 
+        Every line of code you write brings you closer to your dreams.`);
     } else {
-        // Mensaje motivacional para mayores de edad
-        alert(`¡Hola ${nombreUsuario}! 
-        Con tus ${edad} años tienes una gran experiencia de vida. 
-        El mundo de la programación está lleno de oportunidades para ti. 
-        ¡Sigue adelante y alcanza tus metas!`);
+        // Motivational message for adults
+        alert(`Hello ${userName}! 
+        At ${age} years old, you have great life experience. 
+        The world of programming is full of opportunities for you. 
+        Keep moving forward and reach your goals!`);
     }
 }
